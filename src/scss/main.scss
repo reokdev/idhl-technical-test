@@ -1,5 +1,6 @@
 @use 'variables' as *;
 @use 'components/header';
+@use 'components/button';
 
 /* Reset */
 * {
@@ -110,12 +111,12 @@ h1, h2, h3, h4, h5, h6 {
 
     &__content {
         width: 100%;
-        max-width: 450px;
+        max-width: 350px;
         margin: 0 auto;
         padding: 40px;
         text-align: center;
         background-color: $color-white;
-        border-radius: 20px;
+        border-radius: 10px;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
     }
 
@@ -134,13 +135,16 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     &__title {
-        font-size: 2rem;
+        font-size: 1rem;
         margin-bottom: 1rem;
         text-align: center;
     }
 
     &__price {
-        font-size: 1.5rem;
+        font-size: 1rem;
+        letter-spacing: 1px;
+        font-weight: $font-weight-bold;
+        color: $color-primary;
         margin-bottom: 1.5rem;
         text-align: center;
     }
