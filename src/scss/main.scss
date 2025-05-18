@@ -1,5 +1,151 @@
+@use 'variables' as *;
+@use 'components/header';
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Base styles */
 body {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    color: $color-text;
+    font-family: $font-secondary;
+    font-weight: $font-weight-regular;
+    line-height: 1.5;
+    min-height: 100vh;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: $font-primary;
+    font-weight: $font-weight-bold;
+}
+
+/* Layout */
+.page-wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    
+    @media (min-width: 1024px) {
+        flex-direction: row;
+    }
+}
+
+.left-section,
+.right-section {
+    flex: 1;
+    padding: 40px 20px;
+
+    @media (min-width: 1024px) {
+        padding: 60px 40px;
+    }
+}
+
+.right-section {
+    background-color: $color-background;
+    min-height: 50vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+/* Components */
+.header__cart-button {
+    &--desktop {
+        display: none;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+
+        @media (min-width: 1024px) {
+            display: flex;
+        }
+    }
+
+    &--mobile {
+        @media (min-width: 1024px) {
+            display: none;
+        }
+    }
+}
+
+.main {
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+    &__content {
+        width: 100%;
+        text-align: center;
+        margin: 6.25rem 0;
+    }
+
+    &__title {
+        font-size: 2rem;
+        font-weight: $font-weight-regular;
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+
+    &__description {
+        font-size: 1rem;
+        font-weight: $font-weight-regular;
+        color: $color-text;
+        opacity: 0.4;
+        line-height: 1.6;
+        margin-bottom: 2rem;
+        max-width: 450px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+}
+
+.product {
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+    &__content {
+        width: 100%;
+        max-width: 450px;
+        margin: 0 auto;
+        padding: 40px;
+        text-align: center;
+        background-color: $color-white;
+        border-radius: 20px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    }
+
+    &__image {
+        margin: -40px -40px 30px;
+        padding: 40px;
+        background-color: $color-white;
+        border-radius: 20px 20px 0 0;
+    }
+
+    &__img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
+
+    &__title {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+
+    &__price {
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+        text-align: center;
+    }
+
+    &__details {
+        padding: 0 20px;
+    }
 }
