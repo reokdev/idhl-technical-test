@@ -6,7 +6,8 @@
   "scripts": {
     "test": "\"echo \\\"No test specified\\\"\"",
     "build": "webpack --mode production",
-    "dev": "webpack --mode development --watch"
+    "dev": "webpack --mode development --watch",
+    "sass": "sass src/scss/main.scss:dist/styles.css --watch"
   },
   "keywords": [
     "ecommerce",

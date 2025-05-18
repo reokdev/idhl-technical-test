@@ -1,6 +1,7 @@
 @use 'variables' as *;
 @use 'components/header';
 @use 'components/button';
+@use 'components/cart';
 
 /* Reset */
 * {
@@ -10,12 +11,18 @@
 }
 
 /* Base styles */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
 body {
     color: $color-text;
     font-family: $font-secondary;
     font-weight: $font-weight-regular;
     line-height: 1.5;
-    min-height: 100vh;
+    overflow-x: hidden;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -25,12 +32,13 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Layout */
 .page-wrapper {
-    min-height: 100vh;
+    min-height: 100%;
     display: flex;
     flex-direction: column;
     
     @media (min-width: 1024px) {
         flex-direction: row;
+        height: 100%;
     }
 }
 
@@ -38,17 +46,19 @@ h1, h2, h3, h4, h5, h6 {
 .right-section {
     flex: 1;
     padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
 
     @media (min-width: 1024px) {
         padding: 60px 40px;
+        height: 100%;
     }
 }
 
 .right-section {
     background-color: $color-background;
-    min-height: 50vh;
     position: relative;
-    display: flex;
+    justify-content: center;
     align-items: center;
 }
 
@@ -73,7 +83,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .main {
-    height: 100%;
+    flex: 1;
     display: flex;
     align-items: center;
 
@@ -105,8 +115,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .product {
-    height: 100%;
+    width: 100%;
     display: flex;
+    justify-content: center;
     align-items: center;
 
     &__content {

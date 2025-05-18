@@ -10,6 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="dist/styles.css">
   </head>
   <body>
     <div class="page-wrapper">
@@ -65,16 +66,32 @@
 
     <aside class="cart" aria-hidden="true">
       <div class="cart__header">
-        <h2 class="cart__title">Cart</h2>
+        <h2 class="cart__title">Your Bag</h2>
         <button class="cart__close" aria-label="Close Cart">
-          <img
-            src="assets/layers/svg/close.svg"
-            alt=""
-            class="cart__close-icon"
-          />
+          <img src="assets/layers/svg/close.svg" alt="" class="cart__close-icon" />
         </button>
       </div>
-      <div class="cart__items"></div>
+
+      <div class="cart__items">
+        <div class="cart__item">
+          <div class="cart__item-image">
+            <img src="assets/layers/png/chicken.png" alt="Natures Menu Dog Food Can Chicken" class="cart__item-img" />
+          </div>
+          <div class="cart__item-details">
+            <p class="cart__item-title">Natures Menu Dog Food Can Chicken</p>
+            <p class="cart__item-price">£22.81</p>
+            <button class="cart__item-remove">Remove</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="cart__footer">
+        <div class="cart__subtotal">
+          <p class="cart__subtotal-text">Subtotal: £22.81</p>
+        </div>
+        <button class="button button--primary cart__checkout">Proceed to checkout</button>
+        <button class="cart__continue">Continue shopping</button>
+      </div>
     </aside>
 
     <script src="dist/bundle.js"></script>

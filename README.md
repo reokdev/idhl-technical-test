@@ -1,7 +1,6 @@
-
 # iDHL Technical Test
 
-This project has been created for the iDHL Technical Test. This test is for a fictional pet brand who require a responsive landing page with add to bag functionality. When the “add to bag” button is clicked, a cart slides out from the right.
+This project has been created for the iDHL Technical Test. This test is for a fictional pet brand who require a responsive landing page with add to bag functionality. When the "add to bag" button is clicked, a cart slides out from the right.
 
 
 ## Tech Stack
@@ -30,6 +29,7 @@ You can check your Node.js and npm versions by running:
 node --version
 npm --version
 ```
+
 ## Run Locally
 
 Clone the project
@@ -50,19 +50,32 @@ Install dependencies
 npm install
 ```
 
-Start development mode
+### Development Mode
 
+For development, you'll need to run two commands in separate terminal windows:
+
+Terminal 1 - Run webpack to watch and compile JavaScript:
 ```bash
 npm run dev
 ```
 
-Build for production
+Terminal 2 - Run SASS compiler to watch and compile styles:
+```bash
+npm run sass
+```
+
+This setup ensures both webpack and SASS watchers run reliably and you can see the output from each process clearly.
+
+### Production Build
+
+To build for production:
 
 ```bash
 npm run build
 ```
 
 ### Important Notes
-- The development mode (`npm run dev`) will watch for changes in your SASS and JS files
+- Both webpack and SASS watchers will automatically recompile when you make changes
 - Open `index.html` in your browser to view the project
-- Any changes to `src/scss/main.scss` or `src/js/main.js` will automatically trigger a rebuild
+- Changes to JavaScript files in `src/js/` will trigger webpack rebuild
+- Changes to SCSS files in `src/scss/` will trigger SASS recompilation
