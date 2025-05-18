@@ -1,0 +1,28 @@
+{
+  "name": "idhl-technical-test",
+  "version": "1.0.0",
+  "description": " A responsive e-commerce product page demonstrating modern web development practices including SASS compilation and vanilla JavaScript.",
+  "main": "js/main.js",
+  "scripts": {
+    "test": "\"echo \\\"No test specified\\\"\"",
+    "build": "webpack --mode production",
+    "dev": "webpack --mode development --watch"
+  },
+  "keywords": [
+    "ecommerce",
+    "responsive",
+    "sass",
+    "vanilla-javascript",
+    "product-page"
+  ],
+  "author": "Rachael Oldham-Knott",
+  "license": "ISC",
+  "devDependencies": {
+    "css-loader": "^7.1.2",
+    "sass": "^1.89.0",
+    "sass-loader": "^16.0.5",
+    "style-loader": "^4.0.0",
+    "webpack": "^5.99.8",
+    "webpack-cli": "^6.0.1"
+  }
+}
