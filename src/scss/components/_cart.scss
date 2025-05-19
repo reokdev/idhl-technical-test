@@ -44,6 +44,7 @@
     width: 100%;
     max-width: 400px;
     height: 100vh;
+    height: 100dvh;
     background-color: $color-white;
     box-shadow: -4px 0 20px rgba(0, 0, 0, 0.15);
     z-index: 1000;
@@ -164,8 +165,9 @@
     &__items {
         flex: 1;
         overflow-y: auto;
-        padding: 24px 24px 32px;
+        padding: 24px;
         -webkit-overflow-scrolling: touch;
+        overscroll-behavior: contain;
     }
 
     &__item {
@@ -235,9 +237,14 @@
 
     &__footer {
         padding: 24px;
-        padding-bottom: 80px;
         border-top: 1px solid $color-border;
         background: $color-white;
+        position: sticky;
+        bottom: 0;
+
+        @media (max-width: 480px) {
+            padding-bottom: calc(24px + env(safe-area-inset-bottom, 0px));
+        }
     }
 
     &__subtotal {
@@ -271,5 +278,10 @@
         text-transform: uppercase;
         letter-spacing: 0.5px;
         font-size: 0.875rem;
+        color: $color-text;
     }
+}
+
+.header__cart-count {
+    color: $color-text;
 }

@@ -27,6 +27,7 @@
         background: none;
         border: none;
         cursor: pointer;
+        color: $color-text;
     }
 
     &__cart-icon {
@@ -42,5 +43,6 @@
         transform: translateX(-50%);
         font-size: 12px;
         font-weight: $font-weight-medium;
+        color: $color-text;
     }
 }
