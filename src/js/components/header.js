@@ -15,11 +15,13 @@ export function setupHeader() {
         cart.classList.add("is-open", "is-loading");
         backdrop.classList.add("is-visible");
         document.body.style.overflow = "hidden";
+        cart.setAttribute("aria-hidden", "false");
 
         await new Promise((resolve) => setTimeout(resolve, 1000));
 
         cart.classList.remove("is-loading");
         isCartOpen = true;
+        cartCloseButton.focus();
     };
 
     const closeCart = () => {
@@ -28,6 +30,7 @@ export function setupHeader() {
         cart.classList.remove("is-open");
         backdrop.classList.remove("is-visible");
         document.body.style.overflow = "";
+        cart.setAttribute("aria-hidden", "true");
     };
 
     cartButtons.forEach((button) => {

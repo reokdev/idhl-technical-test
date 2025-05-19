@@ -37,6 +37,9 @@
 
     &__cart-count {
         position: absolute;
+        top: 8px;
+        left: 50%;
+        transform: translateX(-50%);
         font-size: 12px;
         font-weight: $font-weight-medium;
     }
