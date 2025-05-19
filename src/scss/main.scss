@@ -1,7 +1,7 @@
-@use 'variables' as *;
-@use 'components/header';
-@use 'components/button';
-@use 'components/cart';
+@use "variables" as *;
+@use "components/header";
+@use "components/button";
+@use "components/cart";
 
 /* Reset */
 * {
@@ -11,7 +11,8 @@
 }
 
 /* Base styles */
-html, body {
+html,
+body {
     height: 100%;
     margin: 0;
     padding: 0;
@@ -25,7 +26,12 @@ body {
     overflow-x: hidden;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: $font-primary;
     font-weight: $font-weight-bold;
 }
@@ -35,7 +41,7 @@ h1, h2, h3, h4, h5, h6 {
     min-height: 100%;
     display: flex;
     flex-direction: column;
-    
+
     @media (min-width: 1024px) {
         flex-direction: row;
         height: 100%;
@@ -149,12 +155,14 @@ h1, h2, h3, h4, h5, h6 {
         font-size: 1rem;
         margin-bottom: 1rem;
         text-align: center;
+        font-family: $font-secondary;
     }
 
     &__price {
         font-size: 1rem;
         letter-spacing: 1px;
         font-weight: $font-weight-bold;
+        font-family: $font-secondary;
         color: $color-primary;
         margin-bottom: 1.5rem;
         text-align: center;

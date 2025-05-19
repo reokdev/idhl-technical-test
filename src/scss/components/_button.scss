@@ -1,4 +1,4 @@
-@use '../variables' as *;
+@use "../variables" as *;
 @use "sass:color";
 
 .button {
@@ -8,9 +8,9 @@
     padding: 1rem 2rem;
     border: none;
     border-radius: 100px;
-    font-family: $font-primary;
+    font-family: $font-secondary;
     font-weight: $font-weight-medium;
-    font-size: 0.875rem;
+    font-size: 0.75rem;
     text-transform: uppercase;
     letter-spacing: 1px;
     cursor: pointer;
@@ -24,4 +24,4 @@
             background-color: color.scale($color-primary, $lightness: -10%);
         }
     }
-} 
+}

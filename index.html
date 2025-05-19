@@ -1,99 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>IDHL Technical Test</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto:wght@400;500;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="dist/styles.css">
-  </head>
-  <body>
-    <div class="page-wrapper">
-      <div class="left-section">
-        <header class="header">
-          <img
-            src="assets/layers/svg/logo.svg"
-            alt="Company Logo"
-            class="header__logo"
-          />
-          <button class="header__cart-button header__cart-button--mobile" aria-label="Open Cart">
-            <img src="assets/layers/svg/bag.svg" alt="" class="header__cart-icon" />
-            <span class="header__cart-count">2</span>
-          </button>
-        </header>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>IDHL Technical Test</title>
+        <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+        <link rel="icon" type="image/x-icon" href="assets/favicon/favicon.ico">
+        <link rel="manifest" href="assets/favicon/site.webmanifest">
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto:wght@400;500;700&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="dist/styles.css" />
+    </head>
+    <body>
+        <div class="page-wrapper">
+            <div class="left-section">
+                <header class="header">
+                    <img
+                        src="assets/layers/svg/logo.svg"
+                        alt="Company Logo"
+                        class="header__logo"
+                    />
+                    <button
+                        class="header__cart-button header__cart-button--mobile"
+                        aria-label="Open Cart"
+                    >
+                        <img
+                            src="assets/layers/svg/bag.svg"
+                            alt=""
+                            class="header__cart-icon"
+                        />
+                        <span class="header__cart-count">2</span>
+                    </button>
+                </header>
 
-        <main class="main">
-          <div class="main__content">
-            <h1 class="main__title">Ornare Vulputate Elit</h1>
-            <p class="main__description">
-              Nullam quis risus eget urna mollis ornare vel eu leo. Fusce dapibus,
-              tellus ac cursus commodo, tortor mauris condimentum nibh, ut
-              fermentum massa justo sit amet risus. Aenean lacinia bibendum nulla
-              sed consectetur. Morbi leo risus, porta ac consectetur ac,
-              vestibulum at eros.
-            </p>
-          </div>
-        </main>
-      </div>
+                <main class="main">
+                    <div class="main__content">
+                        <h1 class="main__title">Ornare Vulputate Elit</h1>
+                        <p class="main__description">
+                            Nullam quis risus eget urna mollis ornare vel eu
+                            leo. Fusce dapibus, tellus ac cursus commodo, tortor
+                            mauris condimentum nibh, ut fermentum massa justo
+                            sit amet risus. Aenean lacinia bibendum nulla sed
+                            consectetur. Morbi leo risus, porta ac consectetur
+                            ac, vestibulum at eros.
+                        </p>
+                    </div>
+                </main>
+            </div>
 
-      <div class="right-section">
-        <button class="header__cart-button header__cart-button--desktop" aria-label="Open Cart">
-          <img src="assets/layers/svg/bag.svg" alt="" class="header__cart-icon" />
-          <span class="header__cart-count">2</span>
-        </button>
-        
-        <section class="product__content">
-          <div class="product__image">
-            <img
-              src="assets/layers/png/chicken.png"
-              alt="Chicken Dog Food"
-              class="product__img"
-            />
-          </div>
-          <div class="product__details">
-            <p class="product__title">Natures Menu Dog Food Can Chicken</p>
-            <p class="product__price">£22.81</p>
-            <button class="button button--primary">Add to bag</button>
-          </div>
-        </section>
-      </div>
-    </div>
+            <div class="right-section">
+                <button
+                    class="header__cart-button header__cart-button--desktop"
+                    aria-label="Open Cart"
+                >
+                    <img
+                        src="assets/layers/svg/bag.svg"
+                        alt=""
+                        class="header__cart-icon"
+                    />
+                    <span class="header__cart-count">2</span>
+                </button>
 
-    <aside class="cart" aria-hidden="true">
-      <div class="cart__header">
-        <h2 class="cart__title">Your Bag</h2>
-        <button class="cart__close" aria-label="Close Cart">
-          <img src="assets/layers/svg/close.svg" alt="" class="cart__close-icon" />
-        </button>
-      </div>
-
-      <div class="cart__items">
-        <div class="cart__item">
-          <div class="cart__item-image">
-            <img src="assets/layers/png/chicken.png" alt="Natures Menu Dog Food Can Chicken" class="cart__item-img" />
-          </div>
-          <div class="cart__item-details">
-            <p class="cart__item-title">Natures Menu Dog Food Can Chicken</p>
-            <p class="cart__item-price">£22.81</p>
-            <button class="cart__item-remove">Remove</button>
-          </div>
+                <section class="product__content">
+                    <div class="product__image">
+                        <img
+                            src="assets/layers/png/chicken.png"
+                            alt="Chicken Dog Food"
+                            class="product__img"
+                        />
+                    </div>
+                    <div class="product__details">
+                        <p class="product__title">
+                            Natures Menu Dog Food Can Chicken
+                        </p>
+                        <p class="product__price">£22.81</p>
+                        <button class="button button--primary">
+                            Add to bag
+                        </button>
+                    </div>
+                </section>
+            </div>
         </div>
-      </div>
 
-      <div class="cart__footer">
-        <div class="cart__subtotal">
-          <p class="cart__subtotal-text">Subtotal: £22.81</p>
-        </div>
-        <button class="button button--primary cart__checkout">Proceed to checkout</button>
-        <button class="cart__continue">Continue shopping</button>
-      </div>
-    </aside>
+        <aside class="cart" aria-hidden="true">
+            <div class="cart__header">
+                <h2 class="cart__title">Your Bag</h2>
+                <button class="cart__close" aria-label="Close Cart">
+                    <img
+                        src="assets/layers/svg/close.svg"
+                        alt=""
+                        class="cart__close-icon"
+                    />
+                </button>
+            </div>
 
-    <script src="dist/bundle.js"></script>
-  </body>
+            <div class="cart__items">
+                <div class="cart__item">
+                    <div class="cart__item-image">
+                        <img
+                            src="assets/layers/png/chicken.png"
+                            alt="Natures Menu Dog Food Can Chicken"
+                            class="cart__item-img"
+                        />
+                    </div>
+                    <div class="cart__item-details">
+                        <p class="cart__item-title">
+                            Natures Menu Dog Food Can Chicken
+                        </p>
+                        <p class="cart__item-price">£22.81</p>
+                        <button class="cart__item-remove">Remove</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cart__footer">
+                <div class="cart__subtotal">
+                    <p class="cart__subtotal-text">Subtotal: £22.81</p>
+                </div>
+                <button class="button button--primary cart__checkout">
+                    Proceed to checkout
+                </button>
+                <button class="cart__continue">Continue shopping</button>
+            </div>
+        </aside>
+
+        <script src="dist/bundle.js"></script>
+    </body>
 </html>

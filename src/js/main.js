@@ -1,5 +1,3 @@
-import { setupHeader } from './components/header';
+import { setupHeader } from "./components/header";
 
-// Initialize header
 setupHeader();
-
