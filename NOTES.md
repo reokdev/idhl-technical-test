@@ -34,7 +34,7 @@
 
 ### Accessibility
 - Added proper ARIA attributes to cart dialog
-- Addedmeyboard navigation
+- Added keyboard navigation
 - Ensured proper focus management
 - Added descriptive labels for screen readers
 - Fixed aria-hidden warning by properly managing focus and visibility states
